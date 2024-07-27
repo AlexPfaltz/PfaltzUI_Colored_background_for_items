@@ -1,0 +1,22 @@
+<Config>
+	<remove xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='preview']/label[@name='durabilityValue']"/>
+    <append xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='preview']">
+		<sprite depth="3" name="qualityBackground" sprite="menu_empty3px" pos="0,0" color="{durabilitycolor}" type="sliced" fillcenter="true" visible="{hasdurability}" />
+		<sprite depth="4" color="[black_alpha]" pos="6,-6" width="360" height="218" type="sliced" visible="{hasdurability}"/>
+		<label depth="11" name="textLevel" pos="320,-195" width="150" height="60" text="LEVEL" text_key="pfaltzUiLevel" color="{durabilitycolor}" font_size="58" effect="outline" justify="right" pivot="bottomright" visible="{hasdurability}"/>
+		<label depth="11" name="qualityValue" pos="330,-197" width="68" height="68" text="{durabilitytext}" color="{durabilitycolor}" font_size="68" effect="outline" pivot="bottomleft" visible="{hasdurability}"/>
+	</append>
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='preview']/button[@name='subtractQualityButton']/@pos">18,-107</set>
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='preview']/button[@name='addQualityButton']/@pos">356,-107</set>
+	<setattribute xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='preview']/sprite[@color='[darkGrey]']" name="visible">{#!hasdurability}</setattribute>
+	
+	<remove xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@name='preview']/label[@name='durabilityValue']"/>
+	<append xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@name='preview']">
+		<sprite depth="3" name="qualityBackground" sprite="menu_empty3px" pos="0,0" color="{durabilitycolor}" type="sliced" fillcenter="true" visible="{hasdurability}" />
+		<sprite depth="4" color="[black_alpha]" pos="6,-6" width="360" height="218" type="sliced" visible="{hasdurability}"/>
+		<!--label name="durabilityValue" depth="12" pos="162,-185" width="200" height="52" text="{durabilitytext}" font_size="40" justify="{durabilityjustify}" color="[white]" visible="{#!hasdurability}" /-->
+		<label depth="11" name="textLevel" pos="320,-200" width="150" height="60" text="LEVEL" text_key="pfaltzUiLevel" color="{durabilitycolor}" font_size="58" effect="outline" justify="right" pivot="bottomright" visible="{hasdurability}"/>
+		<label depth="11" name="qualityValue" pos="330,-202" width="68" height="68" text="{durabilitytext}" color="{durabilitycolor}" font_size="68" effect="outline" pivot="bottomleft" visible="{hasdurability}"/>
+    </append>
+	<setattribute xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@name='preview']/sprite[@color='[darkGrey]']" name="visible">{#!hasdurability}</setattribute>
+</Config>

@@ -1,0 +1,2 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+pfaltzUiLevel,UI,XUI,,,"level:",,"level:","nivel:","niveau:","livello:","レベル:","레벨:","poziom:","nível:","уровень:","seviye:","等级:","等級:"
