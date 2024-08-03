@@ -9,10 +9,10 @@
 	<setattribute xpath="/controls/item_stack/rect/label[@name='stackValue']" name="visible">{#!hasdurability}</setattribute>
 
 	<append xpath="/controls/backpack_item_stack/rect">
-		<sprite depth="2" name="qualityBackground" width="64" height="64" color="{durabilitycolor}" type="sliced" globalopacity="true" visible="{hasdurability}"/>
-		<sprite depth="3" color="[black_alpha]" pos="3,-3" width="58" height="58"  type="sliced" visible="{hasdurability}"/>
-		<label depth="5" name="textLevel" pos="50,-56" width="50" height="38" text="LEVEL" text_key="pfaltzUiLevel" color="{durabilitycolor}" font_size="20" effect="outline" justify="right" pivot="bottomright" visible="{hasdurability}"/>
-		<label depth="5" name="qualityValue" pos="50,-58" width="28" height="28" text="{itemcount}" color="{durabilitycolor}" font_size="26" effect="outline" pivot="bottomleft" visible="{hasdurability}"/>
+		<sprite depth="2" name="qualityBackground" width="72" height="72" color="{durabilitycolor}" type="sliced" globalopacity="true" visible="{hasdurability}"/>
+		<sprite depth="3" color="[black_alpha]" pos="3,-3" width="66" height="66" type="sliced" visible="{hasdurability}"/>
+		<label depth="5" name="textLevel" pos="58,-62" width="55" height="38" text="LEVEL" text_key="pfaltzUiLevel" color="{durabilitycolor}" font_size="20" effect="outline" justify="right" pivot="bottomright" visible="{hasdurability}"/>
+		<label depth="5" name="qualityValue" pos="58,-64" width="28" height="28" text="{itemcount}" color="{durabilitycolor}" font_size="26" effect="outline" pivot="bottomleft" visible="{hasdurability}"/>
 	</append>
 	<set xpath="/controls/backpack_item_stack/rect/label[@name='stackValue']/@justify">Right</set>
 	<setattribute xpath="/controls/backpack_item_stack/rect/label[@name='stackValue']" name="visible">{#!hasdurability}</setattribute>

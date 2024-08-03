@@ -1,7 +1,7 @@
 <xml>	
 	<Name value="PfaltzUIColoredBackgroundForItems" />
 	<DisplayName value="PfaltzUI Colored background for items" />
-	<Version value="1.0" />
+	<Version value="1.1" />
 	<Description value="Adds a colored background to the background for items, the color corresponds to the quality of the items." />
 	<Author value="AlexPfaltz" />
 	<Website value="https://github.com/AlexPfaltz/PfaltzUI_Colored_background_for_items" />
